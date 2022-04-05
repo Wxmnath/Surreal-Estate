@@ -1,0 +1,14 @@
+.navbar {
+  display: flex;
+  border-bottom: 5px solid grey;
+}
+
+.logo {
+  width: 20%;
+}
+
+.navbar-links-item {
+  margin: 0;
+  padding: 6px;
+  display: inline-block;
+}

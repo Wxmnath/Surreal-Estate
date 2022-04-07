@@ -1,3 +1,4 @@
+import { Link, React } from "react-router-dom";
 import "../styles/NavBar.css";
 import surrealEstateLogo from "../Surreal_Estate_Logo.png";
 
@@ -6,8 +7,12 @@ function NavBar() {
     <div className="navbar">
       <ul>
         <img className="logo" src={surrealEstateLogo} alt="logo" />
-        <li className="navbar-links-item">View Properties</li>
-        <li className="navbar-links-item">Add a Property</li>
+        <Link className="navbar-links-item" to="/">
+          View Properties
+        </Link>
+        <Link className="navbar-links-item" to="/add-property">
+          Add a Property
+        </Link>
       </ul>
     </div>
   );

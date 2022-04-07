@@ -1,0 +1,9 @@
+.properties {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  height: 5px;
+  padding: 5px;
+  flex-wrap: nowrap;
+}

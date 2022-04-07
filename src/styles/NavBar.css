@@ -1,6 +1,7 @@
 .navbar {
   display: flex;
   border-bottom: 5px solid grey;
+  width: 100%;
 }
 
 .logo {
@@ -9,6 +10,6 @@
 
 .navbar-links-item {
   margin: 0;
-  padding: 6px;
+  padding: 4px;
   display: inline-block;
 }

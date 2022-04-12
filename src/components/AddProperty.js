@@ -1,4 +1,5 @@
 import { useState, React } from "react";
+import axios from "axios";
 import "../styles/AppProperty.css";
 
 function AddProperty() {
@@ -18,7 +19,18 @@ function AddProperty() {
 
   const handleAddProperty = (event) => {
     event.preventDefault();
-    console.log(fields);
+    axios
+      .post("http://localhost:3000/api/v1/PropertyListing", {
+        fields,
+      })
+      .then((res) => {
+        console.log(res);
+        console.log(res.data.fields);
+        // After creating the POST it  only returns "_id" & "_ _v"?
+      })
+      .catch((err) => {
+        console.log(err);
+      });
   };
 
   const handleFieldChange = (event) => {
@@ -122,7 +134,7 @@ function AddProperty() {
             placeholder="your.email@email.com"
           />
         </label>
-        <button type="submit">Add</button>
+        <button type="submit">Submit</button>
       </form>
     </div>
   );

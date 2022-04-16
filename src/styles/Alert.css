@@ -1,0 +1,19 @@
+.alert-success {
+  border: solid 2px darkgreen;
+  width: max-content;
+  padding-right: 15px;
+  padding-left: 15px;
+  background-color: #0aa811;
+  font-weight: bolder;
+  color: white;
+}
+
+.alert-error {
+  border: solid 1px red;
+  width: max-content;
+  padding-right: 15px;
+  padding-left: 15px;
+  background-color: #ee3b1b;
+  font-weight: bolder;
+  color: white;
+}

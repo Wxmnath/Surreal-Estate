@@ -1,6 +1,7 @@
 import { useState, React } from "react";
 import axios from "axios";
 import "../styles/AppProperty.css";
+import Alert from "./Alert";
 
 function AddProperty() {
   const initialState = {
@@ -13,24 +14,29 @@ function AddProperty() {
       price: "",
       email: "",
     },
+    alert: {
+      message: "",
+      isSuccess: false,
+    },
   };
 
   const [fields, setFields] = useState(initialState.fields);
+  const [alert, setAlert] = useState(initialState.alert);
 
   const handleAddProperty = (event) => {
     event.preventDefault();
+    setAlert({ message: "", isSuccess: false });
     axios
       .post("http://localhost:3000/api/v1/PropertyListing", {
         fields,
       })
-      .then((res) => {
-        console.log(res);
-        console.log(res.data.fields);
-        // After creating the POST it  only returns "_id" & "_ _v"?
-      })
-      .catch((err) => {
-        console.log(err);
-      });
+      .then(() => setAlert({ message: "Property Added", isSuccess: true }))
+      .catch(() =>
+        setAlert({
+          message: "Server error, please try again later",
+          isSuccess: false,
+        })
+      );
   };
 
   const handleFieldChange = (event) => {
@@ -39,10 +45,11 @@ function AddProperty() {
 
   return (
     <div className="properties">
-      Add Property Page
+      <Alert message={alert.message} success={alert.isSuccess} />
+      <h2>Add Property Page</h2>
       <form className="Form" onSubmit={handleAddProperty}>
         <label htmlFor="title">
-          Title
+          Title:
           <input
             id="title"
             name="title"
@@ -120,7 +127,7 @@ function AddProperty() {
             name="price"
             value={fields.price}
             onChange={handleFieldChange}
-            placeholder="0"
+            placeholder="£0"
           />
         </label>
         <label htmlFor="email">

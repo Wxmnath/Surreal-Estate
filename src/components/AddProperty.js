@@ -7,11 +7,11 @@ function AddProperty() {
   const initialState = {
     fields: {
       title: "",
+      price: "",
       city: "Manchester",
       type: "Flat",
       bedrooms: "",
       bathrooms: "",
-      price: "",
       email: "",
     },
     alert: {
@@ -54,6 +54,17 @@ function AddProperty() {
             value={fields.title}
             onChange={handleFieldChange}
             placeholder="Property Title"
+          />
+        </label>
+        <label htmlFor="price">
+          Value (£):
+          <input
+            type="number"
+            id="price"
+            name="price"
+            value={fields.price}
+            onChange={handleFieldChange}
+            placeholder="£0"
           />
         </label>
         <label htmlFor="city">
@@ -116,17 +127,6 @@ function AddProperty() {
             <option value="4">4</option>
             <option value="5">5</option>
           </select>
-        </label>
-        <label htmlFor="price">
-          Value (£):
-          <input
-            type="number"
-            id="price"
-            name="price"
-            value={fields.price}
-            onChange={handleFieldChange}
-            placeholder="£0"
-          />
         </label>
         <label htmlFor="email">
           Your Email:

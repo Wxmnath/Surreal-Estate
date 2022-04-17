@@ -16,9 +16,10 @@
 }
 
 .property-card__email {
-  border: 2px solid brown;
-  background-color: #a93226;
-  padding: 10px;
+  border: 2px solid #291d6a;
+  background-color: #331d9f;
+  padding: 3px;
+  font-size: smaller;
 }
 
 a {

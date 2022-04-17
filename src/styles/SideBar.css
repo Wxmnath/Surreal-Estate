@@ -1,0 +1,23 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.side-bar-list {
+  list-style-type: circle;
+}
+
+li {
+  color: #222d63;
+}
+
+.link-item {
+  text-decoration: dashed;
+  font-weight: 300;
+}
+
+.link-item:hover {
+  text-decoration: underline;
+  text-decoration-color: #5a2c8c;
+}

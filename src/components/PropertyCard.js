@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import "../styles/PropertyCard.css";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function PropertyCard(props) {
   const { title, type, bathrooms, bedrooms, price, city, email } = props;
@@ -12,6 +13,7 @@ function PropertyCard(props) {
       </div>
 
       <div className="property-card__type" data-testid="property-type">
+        {/* <FontAwesomeIcon icon="fa-solid fa-house-chimney-blank" /> */}
         Type:{type}
       </div>
 
@@ -35,7 +37,7 @@ function PropertyCard(props) {
       </div>
 
       <div className="property-card__email" data-testid="property-email">
-        Email:{email}
+        <a href="mailto:someone@example.com">Email:{email}</a>
       </div>
     </div>
   );

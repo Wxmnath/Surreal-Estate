@@ -1,11 +1,12 @@
 import { React } from "react";
 import PropertyCard from "./PropertyCard";
+import "../styles/PropertyCard.css";
 
 function Properties() {
   return (
     <div>
       <h2>Properties Page</h2>
-      <PropertyCard title type bathrooms bedrooms price city email />
+      <PropertyCard />
     </div>
   );
 }

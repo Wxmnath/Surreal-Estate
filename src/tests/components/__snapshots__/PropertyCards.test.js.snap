@@ -46,7 +46,11 @@ exports[`PropertyCard renders correctly 1`] = `
       class="property-card__email"
       data-testid="property-email"
     >
-      Email:test.email@email.com
+      <a
+        href="mailto:someone@example.com"
+      >
+        Email:test.email@email.com
+      </a>
     </div>
   </div>
 </DocumentFragment>

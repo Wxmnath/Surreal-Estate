@@ -8,4 +8,23 @@
   border: 3px solid #ccc;
   box-sizing: border-box;
   max-width: 100%;
+  text-align: center;
+  font-size: 25px;
+  display: inline-block;
+  width: 23%;
+  padding: 0.5rem;
+}
+
+.property-card__email {
+  border: 2px solid brown;
+  background-color: #a93226;
+  padding: 10px;
+}
+
+a {
+  color: white;
+}
+
+.navbar-links-item {
+  color: blue;
 }

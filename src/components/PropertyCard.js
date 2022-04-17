@@ -9,35 +9,30 @@ function PropertyCard(props) {
   return (
     <div className="property-card" data-testid="property-card">
       <div className="property-card__title" data-testid="property-title">
-        Title:{title}
+        {title}
       </div>
-
+      <div className="property-card__price" data-testid="property-price">
+        £:{price}
+      </div>
+      <div className="property-card__city" data-testid="property-city">
+        {city}
+      </div>
       <div className="property-card__type" data-testid="property-type">
         {/* <FontAwesomeIcon icon="fa-solid fa-house-chimney-blank" /> */}
-        Type:{type}
+        {type}
       </div>
-
+      <div className="property-card__bedrooms" data-testid="property-bedrooms">
+        Bedrooms:{bedrooms}
+      </div>
       <div
         className="property-card__bathrooms"
         data-testid="property-bathrooms"
       >
-        Bathrooms:{bathrooms}
-      </div>
-
-      <div className="property-card__bedrooms" data-testid="property-bedrooms">
-        Bedrooms:{bedrooms}
-      </div>
-
-      <div className="property-card__price" data-testid="property-price">
-        Price:{price}
-      </div>
-
-      <div className="property-card__city" data-testid="property-city">
-        City:{city}
+        Bathroom/s:{bathrooms}
       </div>
 
       <div className="property-card__email" data-testid="property-email">
-        <a href="mailto:someone@example.com">Email:{email}</a>
+        <a href="mailto:someone@example.com">{email}</a>
       </div>
     </div>
   );

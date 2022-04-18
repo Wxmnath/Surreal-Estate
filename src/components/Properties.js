@@ -18,7 +18,7 @@ function Properties() {
   const { search } = useLocation();
 
   useEffect(() => {
-    return axios
+    axios
       .get(`http://localhost:3000/api/v1/PropertyListing${search}`)
       .then((response) => {
         setProperties(response.data);

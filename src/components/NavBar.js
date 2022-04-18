@@ -5,7 +5,7 @@ import surrealEstateLogo from "../Surreal_Estate_Logo.png";
 function NavBar() {
   return (
     <div className="navbar">
-      <ul>
+      <ul className="navbar-list">
         <img className="logo" src={surrealEstateLogo} alt="logo" />
         <Link className="navbar-links-item" to="/">
           View Properties

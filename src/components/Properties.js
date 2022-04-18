@@ -3,8 +3,8 @@ import { useLocation } from "react-router-dom";
 import axios from "axios";
 import PropertyCard from "./PropertyCard";
 import Alert from "./Alert";
-import "../styles/PropertyCard.css";
 import SideBar from "./SideBar";
+import "../styles/PropertyCard.css";
 
 function Properties() {
   const initialState = {

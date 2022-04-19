@@ -37,6 +37,19 @@ exports[`App renders app correctly 1`] = `
       <div
         class="sidebar"
       >
+        <form
+          class="search-by-title"
+        >
+          <input
+            type="text"
+            value=""
+          />
+          <button
+            type="submit"
+          >
+            Search
+          </button>
+        </form>
         <h5
           class="sidebar-title"
         >

@@ -28,3 +28,8 @@ a {
 .navbar-links-item {
   color: blue;
 }
+
+.property-card__title {
+  font-weight: bolder;
+  text-decoration: underline;
+}

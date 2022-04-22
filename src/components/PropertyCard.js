@@ -1,12 +1,12 @@
 import React from "react";
 import PropTypes from "prop-types";
-import "../styles/PropertyCard.css";
 import { FaBed, FaBath } from "react-icons/fa";
 import { RiMoneyPoundCircleFill } from "react-icons/ri";
 import { MdEmail } from "react-icons/md";
+import "../styles/PropertyCard.css";
 
 function PropertyCard(props) {
-  const { title, type, bathrooms, bedrooms, price, city } = props;
+  const { title, price, city, type, bedrooms, bathrooms } = props;
 
   return (
     <div className="property-card" data-testid="property-card">

@@ -37,19 +37,6 @@ exports[`App renders app correctly 1`] = `
       <div
         class="sidebar"
       >
-        <form
-          class="search-by-title"
-        >
-          <input
-            type="text"
-            value=""
-          />
-          <button
-            type="submit"
-          >
-            Search
-          </button>
-        </form>
         <h5
           class="sidebar-title"
         >
@@ -96,6 +83,22 @@ exports[`App renders app correctly 1`] = `
         >
           Price Ascending
         </a>
+        <form
+          class="search-by-title"
+        >
+          <button
+            class="search-by-title-button"
+            type="submit"
+          >
+            Search
+          </button>
+          <input
+            class="search-by-title-input"
+            placeholder="Search Property"
+            type="text"
+            value=""
+          />
+        </form>
       </div>
     </div>
   </div>
